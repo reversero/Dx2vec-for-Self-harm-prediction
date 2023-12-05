@@ -16,7 +16,7 @@ EPISODE = 3
 NET_EMBED_DIM = 64
 #====
 
-cases = pd.read_csv('C:/DATA/selfharm_patients_records.csv',na_filter=False)
+cases = pd.read_csv('D:/github_project/Dx2vec-for-Self-harm-prediction/DATA/selfharm_patients_records.csv',na_filter=False)
 cases = cases[cases['AGE']!='nnnulll']
 cases['AGE'] = cases['AGE'].astype(float)
 cases = cases[cases['AGE']>10]
